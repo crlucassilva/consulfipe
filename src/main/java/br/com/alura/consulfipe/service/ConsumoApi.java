@@ -24,6 +24,7 @@ public class ConsumoApi {
             throw new RuntimeException(e);
         }
 
-        return response.body();
+        String json = response.body();
+        return json;
     }
 }
